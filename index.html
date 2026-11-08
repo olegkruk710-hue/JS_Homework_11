@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посты</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Посты
+        </h1>
+    </header>
+    <section class="input-form">
+        <form>
+            <input type="text" id="titleInput" placeholder="Название поста..." required>
+            <textarea id="contentArea" placeholder="Содержимое..."></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    <section class="posts-list" id="postList"></section>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
