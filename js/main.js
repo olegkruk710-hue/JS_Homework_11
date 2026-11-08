@@ -25,7 +25,7 @@ form.addEventListener("submit", async function(e) {
     const content = contentArea.value;
     if (e.submitter.tagName === "BUTTON") {
         try {
-        await createData("post_data", createPost(title, content)) ;
+        await createData("post_data", createContent(title, content));
         location.reload()
         } catch(error) {
             console.error("Ошибка при отправке:", error);
