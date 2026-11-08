@@ -11,7 +11,7 @@ const form = document.querySelector("form");
 let posts;
 
 async function start() {
-    postList.textContent = "Загрузка..."
+    postList.textContent = "Загрузка...."
     posts = await getDATA("post_data");
     postList.textContent = ""
     renderPosts(posts.reverse()); 
